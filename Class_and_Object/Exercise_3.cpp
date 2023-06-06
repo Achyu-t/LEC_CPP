@@ -11,6 +11,21 @@ class student
         void showdata();
         
 };
+
+
+int main()
+{
+    student s1,s2;
+    s1.getdata();
+    s2.getdata();
+    cout<<"First student"<<endl;
+    s1.showdata();
+    cout<<"Second Student"<<endl;
+    s2.showdata();
+    return 0;
+
+}
+
 void student::getdata()
 {
     cout<<"\nEnter Roll No: ";
@@ -25,17 +40,4 @@ void student::showdata()
     cout<<"Name: "<<name<<endl;
     cout<<"Roll No: "<<roll<<endl;
     cout<<"Phone Number: "<<phone<<endl;
-}
-
-int main()
-{
-    student s1,s2;
-    s1.getdata();
-    s2.getdata();
-    cout<<"First student"<<endl;
-    s1.showdata();
-    cout<<"Second Student"<<endl;
-    s2.showdata();
-    return 0;
-
 }

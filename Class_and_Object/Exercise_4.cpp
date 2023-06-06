@@ -27,3 +27,8 @@ inline void student::showdata()
     cout<<"Phone Number: "<<phone<<endl;
 
 }
+
+int main()
+{
+    return 0;
+}
