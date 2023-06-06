@@ -18,12 +18,12 @@ class addition{
         cout<<"Enter any number of choice: "<<endl;cin>>num_1;
         cout<<"Enter any second number of choice: "<<endl;cin>>num_2;
     }
-    void calcdata(float sum)
+    void showdata(float sum)
     {
-        sum= showdata();
+        sum= calcdata();
         cout<<"The sum is : "<<sum;
     }
-    float showdata()
+    float calcdata()
     {
         num_3 = num_1 + num_2;
         
@@ -41,8 +41,8 @@ void nonmem_fun()
 int main()
 {
     addition s1,s2(2,3);
-    s1.showdata();
     s1.calcdata(1);
+    s1.showdata();
     nonmem_fun();
     return 0;
     
