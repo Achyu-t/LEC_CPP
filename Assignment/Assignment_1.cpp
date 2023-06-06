@@ -41,8 +41,8 @@ void nonmem_fun()
 int main()
 {
     addition s1,s2(2,3);
-    s1.calcdata(1);
-    s1.showdata();
+    s1.calcdata();
+    s1.showdata(1);
     nonmem_fun();
     return 0;
     
