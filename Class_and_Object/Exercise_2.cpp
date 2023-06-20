@@ -6,6 +6,7 @@ class student
         int roll;
         char name [20]; char phone [10];
     public:
+
       void getdata ()
       {
         cout<<" \nEnter Roll No: ";
