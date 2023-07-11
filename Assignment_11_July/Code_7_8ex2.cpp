@@ -3,22 +3,28 @@ using namespace std;
 
 class complex{
     protected:
-    float real,imag;
-    public:
-    complex(){}
-    complex(float re){real=re;}
-    complex(float re,float im)
-    {
-        real=re;
-        imag=im;      
-    }
+        float real,imag;
+
+    public: 
+        complex(){}
+
+        complex(float re){real=re;}
+
+        complex(float re,float im)
+        {
+            real=re;
+            imag=im;      
+        }
+   
     complex operator+(complex cc);
+    
     void showdata()
     {
         cout<<"("<<real<<","<<imag<<")";
 
     }
 };
+
 complex complex::operator +(complex cc)
 {
     float rr=real+cc.real;
@@ -26,16 +32,28 @@ complex complex::operator +(complex cc)
     return complex (rr,ri);
 
 }
+
 class dcomplex:public complex 
 {
     public:
     dcomplex(){}
+    
     dcomplex (float re):complex(re){}
+    
     dcomplex(float re,float im):complex (re,im){}
+    
     dcomplex(complex cc):complex(cc){}
+    
+    //For conversion from complex to decomplex
+    
     dcomplex operator +(dcomplex dd);
+    
+    //extend to pass decomplex type object
+    
     dcomplex operator-(dcomplex dd);  
+
 };
+
 dcomplex dcomplex ::operator +(dcomplex dd)
 {
     dcomplex r;
@@ -43,12 +61,14 @@ dcomplex dcomplex ::operator +(dcomplex dd)
     return r;
   
 };
+
 dcomplex dcomplex ::operator -(dcomplex dd)
 {
     float rr=real-dd.real;
     float ri=imag-dd.imag;
     return dcomplex(rr,ri);
 }
+
 int main()
 {
     dcomplex c1(5.6,7.9),c2(3.2,4.5),c3,c4;
