@@ -15,11 +15,11 @@ void display();
 
 void student::getdata()
 {
-    cout<<"ENter name:";
+    cout<<"Enter name:\n";
     cin>>name;
-    cout<<"Enter roll no";
+    cout<<"Enter roll no\n";
     cin>>rollno;
-    cout<<"Enter age";
+    cout<<"Enter age\n";
     cin>>age;
 
 }
@@ -46,9 +46,9 @@ void employee::getdata()
 {
     cout<<"\nEnter name";
     cin>>name;
-    cout<<"Enter salary:";
+    cout<<"\nEnter salary:";
     cin>>salary;
-    cout<<"Enter age:";
+    cout<<"\nEnter age:";
     cin>>age;
 }
 
@@ -89,7 +89,7 @@ void manager::display()
 int main()
 {
 manager m;
-cout<<"Enter data on employee: ";
+cout<<"Enter data on employee: \n";
 m.getdata();
 cout<<"Entered data on employee are: ";
 m.display();
