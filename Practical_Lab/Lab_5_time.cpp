@@ -22,6 +22,8 @@ class Time{
 
     
     void showData()
+
+    +
     {
         cout<<"The converted time is: "<<endl;
         cout<<hr<<"hr "<<min<<"min "<<sec<<"sec ";
