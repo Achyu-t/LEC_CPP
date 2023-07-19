@@ -20,7 +20,7 @@ class BCT{
     
 };
 
-class student :: public BCT{
+class student : public BCT{
 
     private:
     char name[20];
