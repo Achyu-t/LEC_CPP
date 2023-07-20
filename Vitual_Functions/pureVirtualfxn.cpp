@@ -18,8 +18,8 @@ class Shape
 
 int main()
 {
-    Shape *s1;
-    circle *s2=&s1;
+    Shape *s1 = ;
+    // circle *s2=&s1;
     *s2->Area();
     return 0;
 }
